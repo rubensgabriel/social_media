@@ -1,11 +1,17 @@
 header {
-  padding: 20px 80px;
+  padding: 10px 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  background-color: #B2CBED;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .box {
@@ -17,6 +23,7 @@ header {
 .logo {
   font-size: 32px;
   font-weight: 600;
+  color: #000;
 }
 
 .pesquisa {
@@ -26,7 +33,7 @@ header {
 }
 
 .pesquisa > input {
-  padding: 10px 10px 10px 30px;
+  padding: 5px 5px 5px 30px;
   border-radius: 5px;
   border: 1px solid black;
   font-size: 16px;
@@ -34,7 +41,8 @@ header {
 
 .pesquisa > i {
   position: absolute;
-  top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 10px;
 }
 
@@ -58,6 +66,7 @@ header {
 .menu a {
   color: #000;
   font-size: 16px;
+  font-weight: 500;
   position: relative;
 }
 
@@ -83,7 +92,7 @@ header {
 /* ====== Responsivo ======= */
 @media (max-width: 940px) {
   header {
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
   }
